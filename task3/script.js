@@ -47,12 +47,12 @@ btnResult.addEventListener('click',() => {
   if (isNaN(value)) {
     alert("Введено не число!");
     return;
-  }
+  };
   if (value < 1 || value > 10) {
     alert("Число вне диапазона от 1 до 10 !");
     return;
-  }
+  };
 
   const url = `https://picsum.photos/v2/list?limit=${value}`;
   useRequest(url, displayResult); 
-})
+});
